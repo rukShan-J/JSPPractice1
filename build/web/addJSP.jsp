@@ -4,6 +4,7 @@
     Author     : ASUS VIVOBOOK
 --%>
 
+<!--Directive-->
 <%@page import="java.io.PrintWriter"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,6 +15,14 @@
     </head>
     <body>
         
+        <h2>This is addJSP.jsp</h2>
+        
+        <!--Declaration-->
+        <%!
+            int coef = 3;
+        %>
+        
+        <!--Scriptlet - Inside service method-->
         <%
             
             int n1 = Integer.parseInt(request.getParameter("num1"));
@@ -22,7 +31,13 @@
             int addition = n1 + n2;
             
             out.println("Number1 + Number2 = " + addition);
+            
         %>
+        
+        <br/><br/>
+        
+        <!--Expression-->
+        My Number is : <%= coef %>
         
     </body>
 </html>
