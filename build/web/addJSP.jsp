@@ -7,15 +7,23 @@
 <!--Directive-->
 <%@page import="java.io.PrintWriter"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+
+<%@page language="java" contentType="text/html" import="java.sql.Statement, java.util.Random"%>
+
+<%@page import="java.util.ArrayList" %>
+
+<%@include file="header.jsp" %> <!-- as a example we can include header, footer -->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>addJSP</title>
     </head>
-    <body>
+    <body bgcolor="lightpink">
         
-        <h2>This is addJSP.jsp</h2>
+        <h2>This is from addJSP.jsp page</h2>
         
         <!--Declaration-->
         <%!
